@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corruption Protection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Corruption Protection</h1>
+        <button id="start" onclick="start() , this.disabled=true;" class="button">Start Game</button>
+    </header>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="Entity.js"></script>
+    <script src="Ranged_Tower.js"></script>
+    <script src="Grabber_Bot.js"></script>
+    <script src="Tile.js"></script>
+    <script src="Generator.js "></script>
+    <script src="Wall.js"></script>
+    <script src="Force_Field.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="game.js"></script>
+    <main>
+        <p id="p">
+
+            In the year 20XX rampant government bribes has allowed for the creation of several mega toxic waste dumps.
+            Radioactives, heavy metals, bio-hazards, nanoplastics, and more are discarded at these locations.
+            One such dump is the Green Yard. A spill has occurred while transporting a medley of deadly materials there.
+
+            <br>...<br>
+
+            A sanitation crew sent to clean it up. You are the experimental nanobots running throughout their bodies
+            protecting
+            them from certain death as they trek deeper and deeper into the spill zone. Good luck.
+
+            <br>...<br>
+            Controls:
+
+        </p>
+
+        <p id="p2">
+            <br> Select a building with your keyboard then click where you want to place it. A green outline will appear
+            if it is placeable. Click it again to place.
+            <br>
+            <br> 1 - Generator - 5 Bio, 5 Metal, 5 Plastic: It passively generates bio material, some metal, and a little plastic from
+            the host. It also periodically creates drones to retrieve material from slain invaders.
+            <br>
+            <br> 2 - Turret - 3 Bio, 1 Metal: Fires medium damage laser to the closest invader in its range.
+            <br>
+            <br> 3 - Energy Field - 2 Bio, 2 Metal: Short range, high damage to any invader in its radius.
+            <br>
+            <br> 4 - Wall - 1 Plastic: Blocks invaders. High health.
+            <br>
+            <br> 5 - Delete - Destroys a building (non-generators). Careful! No refunds.
+            <br>
+            <br> Select and click again on a turret, energy field, or wall to upgrade it for 2 of each material. This
+            fully heals the building as well.
+            <br> - Turrets gain the ability to shoot another two beams if there are enough enemies in range along with a minor health boost.
+            <br> - Energy fields do increased damage and have increased health.
+            <br> - Walls gain greatly increased health.
+            <br>
+            <br> For every multiple of 50 your score hits you gain a scaling bonus to all materials.
+            <br>
+            <br> The infection starts once you place your first generator and ends once all generators are gone.
+            Remember to leave enough materials to build a generator when starting the game.
+        </p>
+    </main>
+</body>
+
+</html>
